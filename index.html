@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html>
+        <title>Survey-Form|Your best anime</title> 
+        <head>
+            <link rel="stylesheet" href="style.css"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head> 
+        <body>
+            <div id="header">
+               <h1 id="title"> TELL US OF YOUR FAVORITE ANIME</h1>
+               <p id="description">this is a small anime testernator</p> 
+            </div>
+            <div class="form">
+                <form id="survey-form">
+                    <div class="content">
+                    <div  class="column"id="personal-details">
+                    <label id="name-label">
+                        <h3>Name <input type="text" id="name" placeholder="input your name" required></h3>
+                    </label>
+                    <label id="email-label">
+                        <h3>Email <input type="email" id="email" placeholder="input your Email" required></h3>
+                    </label>
+                    <label id="number-label">
+                        <h3>Cell Number <input type="number" id="number" placeholder="input your number" min="10"
+                            max="99"></h3>
+                    </label>
+                    
+                    <label for="otaku">Choose what type of otaku are you :</label>
+                    <select name="cars" id="dropdown" required>
+                      <option disabled selected value>Select the type of otaku you are</option>
+                      <option value="manga">Manga</option>
+                      <option value="anime">Anime</option>
+                    </select>
+                    </div>
+
+                    <div class="column" id="container-anime">
+                        <label id="long-anime">Longest anime you have ever watched</label><br>
+                        <label for="naruto"><input value="naruto" type="radio" name="long-anime"> Naruto</label>
+                        <label for="dbz"><input value="dbz" type="radio" name="long-anime"> DranonBall</label>
+                        <label for="onepiece"><input value="onepiece" type="radio" name="long-anime"> One Piece</label>
+                    </div>
+
+                    <div class="column" id="best-2019">
+                        <label id="long-anime">Best anime you watched in 2019</label><br>
+                        <input type="checkbox" id="anime-1" name="anime-2019-1" value="myHero">
+                        <label for="anime-1"> My Hero Academia</label><br>
+                        <input type="checkbox" id="anime-2" name="anime-2019-2" value="Mob">
+                        <label for="anime-2"> Mob Psycho 100 II</label><br>
+                        <input type="checkbox" id="anime-3" name="anime-2019-3" value="Dororo">
+                        <label for="anime-3"> Dororo</label><br>
+                        <input type="checkbox" id="anime-4" name="anime-2019-4" value="Demon">
+                        <label for="anime-4"> Demon Slayer: Kimetsu no Yaiba</label><br>
+                        <input type="checkbox" id="anime-5" name="anime-2019-5" value="fire">
+                        <label for="anime-5"> Fire Force</label><br>
+
+                        <textarea id="textarea" placeholder="comments if you have nay" rows="8" cols="50"></textarea>
+                
+                    </div>
+                </div>
+
+                   <center> <input type="submit" id="submit" class="submit-button"></center>
+                </form>
+            </div>
+
+
+
+
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </body>
+
+    </html>
